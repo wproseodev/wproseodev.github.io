@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,22 +8,393 @@
     <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
     <title>Hello, World</title>
     <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-NQKJRRH');</script>
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-NQKJRRH');
+    </script>
     <!-- End Google Tag Manager -->
+    <!-- Compiled and minified CSS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </head>
+
 <body>
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NQKJRRH"
-        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-        <!-- End Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NQKJRRH" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
-        <h1>Lorem</h1>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis optio hic voluptatem asperiores enim, vitae nemo facilis dignissimos, deserunt ducimus quae laudantium dolor quos voluptates quaerat temporibus non perspiciatis? Dolore!
-        </p>
-    </body>
-    </html>
+    <h1>Dev Playground</h1>
+    <main>
+        <div class="container">
+            <div id="button" class="row">
+                <div class="col s12">
+                    <h2>Buttons</h2>
+                    <div id="raised" class="section scrollspy">
+                        <p class="caption">
+                            There are 3 main button types described in material design. The raised button is a standard
+                            button that signify actions and seek to give depth to a mostly flat page. The floating
+                            circular action button is meant for very important functions. Flat buttons are usually used
+                            within elements that already have depth like cards or modals.
+                        </p>
+                        <h3 class="header">Raised</h3>
+                        <a class="waves-effect waves-light btn">button</a>
+                        <a class="waves-effect waves-light btn"><i class="material-icons left">cloud</i>button</a>
+                        <a class="waves-effect waves-light btn"><i class="material-icons right">cloud</i>button</a>
+
+                    </div>
+                    <div id="floating" class="section scrollspy">
+                        <h3 class="header">Floating</h3>
+                        <a class="btn-floating waves-effect waves-light btn-large red"><i
+                                class="material-icons">add</i></a><br><br>
+                        <br>
+
+                        <h5>Floating Action Button</h5>
+                        <p>See the documentation on <a href="/floating-action-button.html">this page</a></p>
+                    </div>
+                    <div id="flat" class="section scrollspy">
+                        <h3 class="header">Flat</h3>
+                        <p>Flat buttons are used to reduce excessive layering. For example, flat buttons are usually
+                            used for actions within a card or modal so there aren't too many overlapping shadows.</p>
+                        <a class="waves-effect waves-teal btn-flat">Button</a>
+
+                    </div>
+                    <div id="submit" class="section scrollspy">
+                        <h3 class="header">Submit Button</h3>
+                        <p>When you use a button to submit a form, instead of using a input tag, use a button tag with a
+                            type submit</p>
+                        <button class="btn waves-effect waves-light" type="submit" name="action">Submit<i
+                                class="material-icons right">send</i></button>
+
+                    </div>
+
+                    <div id="large" class="section scrollspy">
+                        <h3 class="header">Large</h3>
+                        <p>This button has a larger height for buttons that need more attention.</p>
+                        <a class="waves-effect waves-light btn-large">Button</a>
+                        <a class="waves-effect waves-light btn-large"><i class="material-icons left">cloud</i>button</a>
+                        <a class="waves-effect waves-light btn-large"><i
+                                class="material-icons right">cloud</i>button</a>
+
+                    </div>
+
+
+                    <div id="small" class="section scrollspy">
+                        <h3 class="header">Small</h3>
+                        <p>When mouse and keyboard are the primary input methods, this smaller button is useful for
+                            denser UI layouts.</p>
+                        <a class="waves-effect waves-light btn-small">Button</a>
+                        <a class="waves-effect waves-light btn-small"><i class="material-icons left">cloud</i>button</a>
+                        <a class="waves-effect waves-light btn-small"><i
+                                class="material-icons right">cloud</i>button</a>
+
+                    </div>
+                    <div id="disabled" class="section scrollspy">
+                        <h3 class="header">Disabled</h3>
+                        <p>This style can be applied to all button types</p>
+                        <a class="btn-large disabled">Button</a>
+                        <a class="btn disabled">Button</a>
+                        <a class="btn-flat disabled">Button</a>
+                        <a class="btn-floating disabled"><i class="material-icons">add</i></a>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div id="forms" class="row">
+                <div class="col s12">
+                    <h2>Forms</h2>
+                    <div id="input" class="section scrollspy">
+                        <p class="caption">
+                            Forms are the standard way to receive user inputted data. The transitions and smoothness of
+                            these elements are very important because of the inherent user interaction associated with
+                            forms.
+                        </p>
+
+                        <h3 class="header">Input fields</h3>
+                        <p>Text fields allow user input. The border should light up simply and clearly indicating which
+                            field the user is currently editing. You must have a <code
+                                class=" language-markup">.input-field</code> div wrapping your input and label. This is
+                            only used in our Input and Textarea form elements.</p>
+                        <p>The validate class leverages HTML5 validation and will add a <code
+                                class=" language-markup">valid</code> and <code class=" language-markup">invalid</code>
+                            class accordingly. If you don't want the Green and Red validation states, just remove the
+                            <code class=" language-markup">validate</code> class from your inputs.</p>
+                        <br>
+                        <form action="/forms.html" method="post" >
+                            <div class="row">
+                                <div class="input-field col s6">
+                                    <input placeholder="Placeholder" id="first_name" type="text" class="validate valid"
+                                        style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4EaVTO26DQBD1ohQWaS2lg9JybZ+AK7hNwx2oIoVf4UPQ0Lj1FdKktevIpel8AKNUkDcWMxpgSaIEaTVv3sx7uztiTdu2s/98DywOw3Dued4Who/M2aIx5lZV1aEsy0+qiwHELyi+Ytl0PQ69SxAxkWIA4RMRTdNsKE59juMcuZd6xIAFeZ6fGCdJ8kY4y7KAuTRNGd7jyEBXsdOPE3a0QGPsniOnnYMO67LgSQN9T41F2QGrQRRFCwyzoIF2qyBuKKbcOgPXdVeY9rMWgNsjf9ccYesJhk3f5dYT1HX9gR0LLQR30TnjkUEcx2uIuS4RnI+aj6sJR0AM8AaumPaM/rRehyWhXqbFAA9kh3/8/NvHxAYGAsZ/il8IalkCLBfNVAAAAABJRU5ErkJggg==&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;"
+                                        data-kwimpalastatus="alive" data-kwimpalaid="1568420292368-3">
+                                    <label for="first_name" class="active">First Name</label>
+                                    <span
+                                        style="opacity: 1; left: 340.25px; top: 16.5px; width: 19px; min-width: 19px; height: 13px; position: absolute; background-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHhtbG5zOnhsaW5rPSdodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rJyB3aWR0aD0nMTcnIGhlaWdodD0nMTInIHZpZXdCb3g9JzAgMCAxNyAxMic+IDxkZWZzPiA8cGF0aCBpZD0nYScgZD0nTTcuOTA5IDEuNDYybDIuMTIxLjg2NHMtLjY3MS4xMy0xLjIwOS4yOTRjMCAwIC40MzcuNjM0Ljc3LjkzOC4zOTEtLjE4LjY1Ny0uMjQ4LjY1Ny0uMjQ4LS44MTEgMS42NjgtMi45NzkgMi43MDMtNC41MyAyLjcwMy0uMDkzIDAtLjQ4Mi0uMDA2LS43MjcuMDE1LS40MzUuMDIxLS41ODEuMzgtLjM3NC40NzMuMzczLjIwMSAxLjE0My42NjIuOTU4IDEuMDA5QzUuMiA4LjAwMy45OTkgMTEgLjk5OSAxMWwuNjQ4Ljg4Nkw2LjEyOSA4LjYzQzguNjAyIDYuOTQ4IDEyLjAwNiA2IDE1IDZoM1Y1aC00LjAwMWMtMS4wNTggMC0yLjA0LjEyMi0yLjQ3My0uMDItLjQwMi0uMTMzLS41MDItLjY3OS0uNDU1LTEuMDM1YTcuODcgNy44NyAwIDAgMSAuMTg3LS43MjljLjAyOC0uMDk5LjA0Ni0uMDc3LjE1NS0uMDk5LjU0LS4xMTIuNzc3LS4wOTUuODIxLS4xNi4xNDYtLjI0NS4yNTQtLjk3NC4yNTQtLjk3NEw3LjU2OS4zODlzLjIwMiAxLjAxMy4zNCAxLjA3M3onLz4gPC9kZWZzPiA8dXNlIGZpbGw9JyMwMDdDOTcnIGZpbGwtcnVsZT0nZXZlbm9kZCcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoLTEpJyB4bGluazpocmVmPScjYScvPiA8L3N2Zz4=&quot;); background-repeat: no-repeat; background-position: 0px 0px; border: none; display: inline; visibility: visible; z-index: auto;"></span>
+                                </div>
+                                <div class="input-field col s6">
+                                    <input id="last_name" type="text" data-kwimpalastatus="alive"
+                                        data-kwimpalaid="1568420292368-4">
+                                    <label for="last_name" class="active">Last Name</label>
+                                    <span
+                                        style="opacity: 1; left: 340.25px; top: 16.5px; width: 19px; min-width: 19px; height: 13px; position: absolute; background-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHhtbG5zOnhsaW5rPSdodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rJyB3aWR0aD0nMTcnIGhlaWdodD0nMTInIHZpZXdCb3g9JzAgMCAxNyAxMic+IDxkZWZzPiA8cGF0aCBpZD0nYScgZD0nTTcuOTA5IDEuNDYybDIuMTIxLjg2NHMtLjY3MS4xMy0xLjIwOS4yOTRjMCAwIC40MzcuNjM0Ljc3LjkzOC4zOTEtLjE4LjY1Ny0uMjQ4LjY1Ny0uMjQ4LS44MTEgMS42NjgtMi45NzkgMi43MDMtNC41MyAyLjcwMy0uMDkzIDAtLjQ4Mi0uMDA2LS43MjcuMDE1LS40MzUuMDIxLS41ODEuMzgtLjM3NC40NzMuMzczLjIwMSAxLjE0My42NjIuOTU4IDEuMDA5QzUuMiA4LjAwMy45OTkgMTEgLjk5OSAxMWwuNjQ4Ljg4Nkw2LjEyOSA4LjYzQzguNjAyIDYuOTQ4IDEyLjAwNiA2IDE1IDZoM1Y1aC00LjAwMWMtMS4wNTggMC0yLjA0LjEyMi0yLjQ3My0uMDItLjQwMi0uMTMzLS41MDItLjY3OS0uNDU1LTEuMDM1YTcuODcgNy44NyAwIDAgMSAuMTg3LS43MjljLjAyOC0uMDk5LjA0Ni0uMDc3LjE1NS0uMDk5LjU0LS4xMTIuNzc3LS4wOTUuODIxLS4xNi4xNDYtLjI0NS4yNTQtLjk3NC4yNTQtLjk3NEw3LjU2OS4zODlzLjIwMiAxLjAxMy4zNCAxLjA3M3onLz4gPC9kZWZzPiA8dXNlIGZpbGw9JyMwMDdDOTcnIGZpbGwtcnVsZT0nZXZlbm9kZCcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoLTEpJyB4bGluazpocmVmPScjYScvPiA8L3N2Zz4=&quot;); background-repeat: no-repeat; background-position: 0px 0px; border: none; display: inline; visibility: visible; z-index: auto;"></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input disabled="" value="I am not editable" id="disabled" type="text"
+                                        class="validate">
+                                    <label for="disabled" class="active">Disabled</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input id="password" type="password" class="validate"
+                                        style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACIUlEQVQ4EX2TOYhTURSG87IMihDsjGghBhFBmHFDHLWwSqcikk4RRKJgk0KL7C8bMpWpZtIqNkEUl1ZCgs0wOo0SxiLMDApWlgOPrH7/5b2QkYwX7jvn/uc//zl3edZ4PPbNGvF4fC4ajR5VrNvt/mo0Gr1ZPOtfgWw2e9Lv9+chX7cs64CS4Oxg3o9GI7tUKv0Q5o1dAiTfCgQCLwnOkfQOu+oSLyJ2A783HA7vIPLGxX0TgVwud4HKn0nc7Pf7N6vV6oZHkkX8FPG3uMfgXC0Wi2vCg/poUKGGcagQI3k7k8mcp5slcGswGDwpl8tfwGJg3xB6Dvey8vz6oH4C3iXcFYjbwiDeo1KafafkC3NjK7iL5ESFGQEUF7Sg+ifZdDp9GnMF/KGmfBdT2HCwZ7TwtrBPC7rQaav6Iv48rqZwg+F+p8hOMBj0IbxfMdMBrW5pAVGV/ztINByENkU0t5BIJEKRSOQ3Aj+Z57iFs1R5NK3EQS6HQqF1zmQdzpFWq3W42WwOTAf1er1PF2USFlC+qxMvFAr3HcexWX+QX6lUvsKpkTyPSEXJkw6MQ4S38Ljdbi8rmM/nY+CvgNcQqdH6U/xrYK9t244jZv6ByUOSiDdIfgBZ12U6dHEHu9TpdIr8F0OP692CtzaW/a6y3y0Wx5kbFHvGuXzkgf0xhKnPzA4UTyaTB8Ph8AvcHi3fnsrZ7Wore02YViqVOrRXXPhfqP8j6MYlawoAAAAASUVORK5CYII=&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;"
+                                        data-kwimpalastatus="alive" data-kwimpalaid="1568420292368-2">
+                                    <label for="password">Password</label>
+                                    <span
+                                        style="opacity: 1; left: 713.25px; top: 16.5px; width: 19px; min-width: 19px; height: 13px; position: absolute; background-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHhtbG5zOnhsaW5rPSdodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rJyB3aWR0aD0nMTcnIGhlaWdodD0nMTInIHZpZXdCb3g9JzAgMCAxNyAxMic+IDxkZWZzPiA8cGF0aCBpZD0nYScgZD0nTTcuOTA5IDEuNDYybDIuMTIxLjg2NHMtLjY3MS4xMy0xLjIwOS4yOTRjMCAwIC40MzcuNjM0Ljc3LjkzOC4zOTEtLjE4LjY1Ny0uMjQ4LjY1Ny0uMjQ4LS44MTEgMS42NjgtMi45NzkgMi43MDMtNC41MyAyLjcwMy0uMDkzIDAtLjQ4Mi0uMDA2LS43MjcuMDE1LS40MzUuMDIxLS41ODEuMzgtLjM3NC40NzMuMzczLjIwMSAxLjE0My42NjIuOTU4IDEuMDA5QzUuMiA4LjAwMy45OTkgMTEgLjk5OSAxMWwuNjQ4Ljg4Nkw2LjEyOSA4LjYzQzguNjAyIDYuOTQ4IDEyLjAwNiA2IDE1IDZoM1Y1aC00LjAwMWMtMS4wNTggMC0yLjA0LjEyMi0yLjQ3My0uMDItLjQwMi0uMTMzLS41MDItLjY3OS0uNDU1LTEuMDM1YTcuODcgNy44NyAwIDAgMSAuMTg3LS43MjljLjAyOC0uMDk5LjA0Ni0uMDc3LjE1NS0uMDk5LjU0LS4xMTIuNzc3LS4wOTUuODIxLS4xNi4xNDYtLjI0NS4yNTQtLjk3NC4yNTQtLjk3NEw3LjU2OS4zODlzLjIwMiAxLjAxMy4zNCAxLjA3M3onLz4gPC9kZWZzPiA8dXNlIGZpbGw9JyMwMDdDOTcnIGZpbGwtcnVsZT0nZXZlbm9kZCcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoLTEpJyB4bGluazpocmVmPScjYScvPiA8L3N2Zz4=&quot;); background-repeat: no-repeat; background-position: 0px 0px; border: none; display: inline; visibility: visible; z-index: auto;"></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input id="email" type="email" class="validate" data-kwimpalastatus="alive"
+                                        data-kwimpalaid="1568420292368-5">
+                                    <label for="email">Email</label>
+                                    <span class="helper-text" data-error="wrong" data-success="right">Helper text</span>
+                                    <span
+                                        style="opacity: 1; left: 713.25px; top: 16.5px; width: 19px; min-width: 19px; height: 13px; position: absolute; background-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHhtbG5zOnhsaW5rPSdodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rJyB3aWR0aD0nMTcnIGhlaWdodD0nMTInIHZpZXdCb3g9JzAgMCAxNyAxMic+IDxkZWZzPiA8cGF0aCBpZD0nYScgZD0nTTcuOTA5IDEuNDYybDIuMTIxLjg2NHMtLjY3MS4xMy0xLjIwOS4yOTRjMCAwIC40MzcuNjM0Ljc3LjkzOC4zOTEtLjE4LjY1Ny0uMjQ4LjY1Ny0uMjQ4LS44MTEgMS42NjgtMi45NzkgMi43MDMtNC41MyAyLjcwMy0uMDkzIDAtLjQ4Mi0uMDA2LS43MjcuMDE1LS40MzUuMDIxLS41ODEuMzgtLjM3NC40NzMuMzczLjIwMSAxLjE0My42NjIuOTU4IDEuMDA5QzUuMiA4LjAwMy45OTkgMTEgLjk5OSAxMWwuNjQ4Ljg4Nkw2LjEyOSA4LjYzQzguNjAyIDYuOTQ4IDEyLjAwNiA2IDE1IDZoM1Y1aC00LjAwMWMtMS4wNTggMC0yLjA0LjEyMi0yLjQ3My0uMDItLjQwMi0uMTMzLS41MDItLjY3OS0uNDU1LTEuMDM1YTcuODcgNy44NyAwIDAgMSAuMTg3LS43MjljLjAyOC0uMDk5LjA0Ni0uMDc3LjE1NS0uMDk5LjU0LS4xMTIuNzc3LS4wOTUuODIxLS4xNi4xNDYtLjI0NS4yNTQtLjk3NC4yNTQtLjk3NEw3LjU2OS4zODlzLjIwMiAxLjAxMy4zNCAxLjA3M3onLz4gPC9kZWZzPiA8dXNlIGZpbGw9JyMwMDdDOTcnIGZpbGwtcnVsZT0nZXZlbm9kZCcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoLTEpJyB4bGluazpocmVmPScjYScvPiA8L3N2Zz4=&quot;); background-repeat: no-repeat; background-position: 0px 0px; border: none; display: inline; visibility: visible; z-index: auto;"></span>
+                                </div>
+                                <button class="btn waves-effect waves-light" type="submit" name="action">Submit<i
+                                    class="material-icons right">send</i></button>
+                            </div>
+                            <div class="row">
+                                <div class="col s12">
+                                    This is an inline input field:
+                                    <div class="input-field inline">
+                                        <input id="email_inline" type="email" class="validate"
+                                            data-kwimpalastatus="alive" data-kwimpalaid="1568420292368-6">
+                                        <label for="email_inline">Email</label>
+                                        <span class="helper-text" data-error="wrong" data-success="right"></span>
+                                        <span
+                                            style="opacity: 1; left: 145px; top: 16.5px; width: 19px; min-width: 19px; height: 13px; position: absolute; background-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHhtbG5zOnhsaW5rPSdodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rJyB3aWR0aD0nMTcnIGhlaWdodD0nMTInIHZpZXdCb3g9JzAgMCAxNyAxMic+IDxkZWZzPiA8cGF0aCBpZD0nYScgZD0nTTcuOTA5IDEuNDYybDIuMTIxLjg2NHMtLjY3MS4xMy0xLjIwOS4yOTRjMCAwIC40MzcuNjM0Ljc3LjkzOC4zOTEtLjE4LjY1Ny0uMjQ4LjY1Ny0uMjQ4LS44MTEgMS42NjgtMi45NzkgMi43MDMtNC41MyAyLjcwMy0uMDkzIDAtLjQ4Mi0uMDA2LS43MjcuMDE1LS40MzUuMDIxLS41ODEuMzgtLjM3NC40NzMuMzczLjIwMSAxLjE0My42NjIuOTU4IDEuMDA5QzUuMiA4LjAwMy45OTkgMTEgLjk5OSAxMWwuNjQ4Ljg4Nkw2LjEyOSA4LjYzQzguNjAyIDYuOTQ4IDEyLjAwNiA2IDE1IDZoM1Y1aC00LjAwMWMtMS4wNTggMC0yLjA0LjEyMi0yLjQ3My0uMDItLjQwMi0uMTMzLS41MDItLjY3OS0uNDU1LTEuMDM1YTcuODcgNy44NyAwIDAgMSAuMTg3LS43MjljLjAyOC0uMDk5LjA0Ni0uMDc3LjE1NS0uMDk5LjU0LS4xMTIuNzc3LS4wOTUuODIxLS4xNi4xNDYtLjI0NS4yNTQtLjk3NC4yNTQtLjk3NEw3LjU2OS4zODlzLjIwMiAxLjAxMy4zNCAxLjA3M3onLz4gPC9kZWZzPiA8dXNlIGZpbGw9JyMwMDdDOTcnIGZpbGwtcnVsZT0nZXZlbm9kZCcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoLTEpJyB4bGluazpocmVmPScjYScvPiA8L3N2Zz4=&quot;); background-repeat: no-repeat; background-position: 0px 0px; border: none; display: inline; visibility: visible; z-index: auto;"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <br>
+                        <h5>Prefilling Text Inputs</h5>
+                        <p>If you are having trouble with the labels overlapping prefilled content, Try adding <code
+                                class=" language-markup">class="active"</code> to the label. <br>You can also call the
+                            function <code class=" language-javascript">M<span class="token punctuation">.</span><span
+                                    class="token function">updateTextFields</span><span
+                                    class="token punctuation">(</span><span class="token punctuation">)</span><span
+                                    class="token punctuation">;</span></code> to reinitialize all the Materialize labels
+                            on the page if you are dynamically adding inputs.</p>
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input value="Alvin" id="first_name2" type="text" class="validate"
+                                    data-kwimpalastatus="alive" data-kwimpalaid="1568420292368-7">
+                                <label class="active" for="first_name2">First Name</label>
+                                <span
+                                    style="opacity: 1; left: 340.25px; top: 16.5px; width: 19px; min-width: 19px; height: 13px; position: absolute; background-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHhtbG5zOnhsaW5rPSdodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rJyB3aWR0aD0nMTcnIGhlaWdodD0nMTInIHZpZXdCb3g9JzAgMCAxNyAxMic+IDxkZWZzPiA8cGF0aCBpZD0nYScgZD0nTTcuOTA5IDEuNDYybDIuMTIxLjg2NHMtLjY3MS4xMy0xLjIwOS4yOTRjMCAwIC40MzcuNjM0Ljc3LjkzOC4zOTEtLjE4LjY1Ny0uMjQ4LjY1Ny0uMjQ4LS44MTEgMS42NjgtMi45NzkgMi43MDMtNC41MyAyLjcwMy0uMDkzIDAtLjQ4Mi0uMDA2LS43MjcuMDE1LS40MzUuMDIxLS41ODEuMzgtLjM3NC40NzMuMzczLjIwMSAxLjE0My42NjIuOTU4IDEuMDA5QzUuMiA4LjAwMy45OTkgMTEgLjk5OSAxMWwuNjQ4Ljg4Nkw2LjEyOSA4LjYzQzguNjAyIDYuOTQ4IDEyLjAwNiA2IDE1IDZoM1Y1aC00LjAwMWMtMS4wNTggMC0yLjA0LjEyMi0yLjQ3My0uMDItLjQwMi0uMTMzLS41MDItLjY3OS0uNDU1LTEuMDM1YTcuODcgNy44NyAwIDAgMSAuMTg3LS43MjljLjAyOC0uMDk5LjA0Ni0uMDc3LjE1NS0uMDk5LjU0LS4xMTIuNzc3LS4wOTUuODIxLS4xNi4xNDYtLjI0NS4yNTQtLjk3NC4yNTQtLjk3NEw3LjU2OS4zODlzLjIwMiAxLjAxMy4zNCAxLjA3M3onLz4gPC9kZWZzPiA8dXNlIGZpbGw9JyMwMDdDOTcnIGZpbGwtcnVsZT0nZXZlbm9kZCcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoLTEpJyB4bGluazpocmVmPScjYScvPiA8L3N2Zz4=&quot;); background-repeat: no-repeat; background-position: 0px 0px; border: none; display: inline; visibility: visible; z-index: auto;"></span>
+                            </div>
+                        </div>
+                        <br>
+
+                        <h5>Icon Prefixes</h5>
+                        <p>You can add an icon prefix to make the form input label even more clear. Just add an icon
+                            with the class <code class=" language-markup">prefix</code> before the input and label.</p>
+                        <br>
+                        <div class="row">
+                            <form action="/forms.html" method="post"  class="col s12">
+                                <div class="row">
+                                    <div class="input-field col s6">
+                                        <i class="material-icons prefix">account_circle</i>
+                                        <input id="icon_prefix" type="text" class="validate" data-kwimpalastatus="alive"
+                                            data-kwimpalaid="1568420292368-8">
+                                        <label for="icon_prefix">First Name</label>
+                                        <span
+                                            style="opacity: 1; left: 340.25px; top: 16.5px; width: 19px; min-width: 19px; height: 13px; position: absolute; background-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHhtbG5zOnhsaW5rPSdodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rJyB3aWR0aD0nMTcnIGhlaWdodD0nMTInIHZpZXdCb3g9JzAgMCAxNyAxMic+IDxkZWZzPiA8cGF0aCBpZD0nYScgZD0nTTcuOTA5IDEuNDYybDIuMTIxLjg2NHMtLjY3MS4xMy0xLjIwOS4yOTRjMCAwIC40MzcuNjM0Ljc3LjkzOC4zOTEtLjE4LjY1Ny0uMjQ4LjY1Ny0uMjQ4LS44MTEgMS42NjgtMi45NzkgMi43MDMtNC41MyAyLjcwMy0uMDkzIDAtLjQ4Mi0uMDA2LS43MjcuMDE1LS40MzUuMDIxLS41ODEuMzgtLjM3NC40NzMuMzczLjIwMSAxLjE0My42NjIuOTU4IDEuMDA5QzUuMiA4LjAwMy45OTkgMTEgLjk5OSAxMWwuNjQ4Ljg4Nkw2LjEyOSA4LjYzQzguNjAyIDYuOTQ4IDEyLjAwNiA2IDE1IDZoM1Y1aC00LjAwMWMtMS4wNTggMC0yLjA0LjEyMi0yLjQ3My0uMDItLjQwMi0uMTMzLS41MDItLjY3OS0uNDU1LTEuMDM1YTcuODcgNy44NyAwIDAgMSAuMTg3LS43MjljLjAyOC0uMDk5LjA0Ni0uMDc3LjE1NS0uMDk5LjU0LS4xMTIuNzc3LS4wOTUuODIxLS4xNi4xNDYtLjI0NS4yNTQtLjk3NC4yNTQtLjk3NEw3LjU2OS4zODlzLjIwMiAxLjAxMy4zNCAxLjA3M3onLz4gPC9kZWZzPiA8dXNlIGZpbGw9JyMwMDdDOTcnIGZpbGwtcnVsZT0nZXZlbm9kZCcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoLTEpJyB4bGluazpocmVmPScjYScvPiA8L3N2Zz4=&quot;); background-repeat: no-repeat; background-position: 0px 0px; border: none; display: inline; visibility: visible; z-index: auto;"></span>
+                                    </div>
+                                    <div class="input-field col s6">
+                                        <i class="material-icons prefix">phone</i>
+                                        <input id="icon_telephone" type="tel" class="validate"
+                                            data-kwimpalastatus="alive" data-kwimpalaid="1568420292368-9">
+                                        <label for="icon_telephone">Telephone</label>
+                                        <span
+                                            style="opacity: 1; left: 340.25px; top: 16.5px; width: 19px; min-width: 19px; height: 13px; position: absolute; background-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHhtbG5zOnhsaW5rPSdodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rJyB3aWR0aD0nMTcnIGhlaWdodD0nMTInIHZpZXdCb3g9JzAgMCAxNyAxMic+IDxkZWZzPiA8cGF0aCBpZD0nYScgZD0nTTcuOTA5IDEuNDYybDIuMTIxLjg2NHMtLjY3MS4xMy0xLjIwOS4yOTRjMCAwIC40MzcuNjM0Ljc3LjkzOC4zOTEtLjE4LjY1Ny0uMjQ4LjY1Ny0uMjQ4LS44MTEgMS42NjgtMi45NzkgMi43MDMtNC41MyAyLjcwMy0uMDkzIDAtLjQ4Mi0uMDA2LS43MjcuMDE1LS40MzUuMDIxLS41ODEuMzgtLjM3NC40NzMuMzczLjIwMSAxLjE0My42NjIuOTU4IDEuMDA5QzUuMiA4LjAwMy45OTkgMTEgLjk5OSAxMWwuNjQ4Ljg4Nkw2LjEyOSA4LjYzQzguNjAyIDYuOTQ4IDEyLjAwNiA2IDE1IDZoM1Y1aC00LjAwMWMtMS4wNTggMC0yLjA0LjEyMi0yLjQ3My0uMDItLjQwMi0uMTMzLS41MDItLjY3OS0uNDU1LTEuMDM1YTcuODcgNy44NyAwIDAgMSAuMTg3LS43MjljLjAyOC0uMDk5LjA0Ni0uMDc3LjE1NS0uMDk5LjU0LS4xMTIuNzc3LS4wOTUuODIxLS4xNi4xNDYtLjI0NS4yNTQtLjk3NC4yNTQtLjk3NEw3LjU2OS4zODlzLjIwMiAxLjAxMy4zNCAxLjA3M3onLz4gPC9kZWZzPiA8dXNlIGZpbGw9JyMwMDdDOTcnIGZpbGwtcnVsZT0nZXZlbm9kZCcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoLTEpJyB4bGluazpocmVmPScjYScvPiA8L3N2Zz4=&quot;); background-repeat: no-repeat; background-position: 0px 0px; border: none; display: inline; visibility: visible; z-index: auto;"></span>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <br>
+
+                        <h5>Custom Error or Success Messages</h5>
+                        <p>You can add custom validation messages by adding either <code
+                                class=" language-markup">data-error</code> or <code
+                                class=" language-markup">data-success</code> attributes to your helper text element.</p>
+                        <br>
+                        <div class="row">
+                            <form action="/forms.html" method="post"  class="col s12">
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <input id="email2" type="email" class="validate" data-kwimpalastatus="alive"
+                                            data-kwimpalaid="1568420292368-10">
+                                        <label for="email2">Email</label>
+                                        <span class="helper-text" data-error="wrong" data-success="right">Helper
+                                            text</span>
+                                        <span
+                                            style="opacity: 1; left: 713.25px; top: 16.5px; width: 19px; min-width: 19px; height: 13px; position: absolute; background-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHhtbG5zOnhsaW5rPSdodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rJyB3aWR0aD0nMTcnIGhlaWdodD0nMTInIHZpZXdCb3g9JzAgMCAxNyAxMic+IDxkZWZzPiA8cGF0aCBpZD0nYScgZD0nTTcuOTA5IDEuNDYybDIuMTIxLjg2NHMtLjY3MS4xMy0xLjIwOS4yOTRjMCAwIC40MzcuNjM0Ljc3LjkzOC4zOTEtLjE4LjY1Ny0uMjQ4LjY1Ny0uMjQ4LS44MTEgMS42NjgtMi45NzkgMi43MDMtNC41MyAyLjcwMy0uMDkzIDAtLjQ4Mi0uMDA2LS43MjcuMDE1LS40MzUuMDIxLS41ODEuMzgtLjM3NC40NzMuMzczLjIwMSAxLjE0My42NjIuOTU4IDEuMDA5QzUuMiA4LjAwMy45OTkgMTEgLjk5OSAxMWwuNjQ4Ljg4Nkw2LjEyOSA4LjYzQzguNjAyIDYuOTQ4IDEyLjAwNiA2IDE1IDZoM1Y1aC00LjAwMWMtMS4wNTggMC0yLjA0LjEyMi0yLjQ3My0uMDItLjQwMi0uMTMzLS41MDItLjY3OS0uNDU1LTEuMDM1YTcuODcgNy44NyAwIDAgMSAuMTg3LS43MjljLjAyOC0uMDk5LjA0Ni0uMDc3LjE1NS0uMDk5LjU0LS4xMTIuNzc3LS4wOTUuODIxLS4xNi4xNDYtLjI0NS4yNTQtLjk3NC4yNTQtLjk3NEw3LjU2OS4zODlzLjIwMiAxLjAxMy4zNCAxLjA3M3onLz4gPC9kZWZzPiA8dXNlIGZpbGw9JyMwMDdDOTcnIGZpbGwtcnVsZT0nZXZlbm9kZCcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoLTEpJyB4bGluazpocmVmPScjYScvPiA8L3N2Zz4=&quot;); background-repeat: no-repeat; background-position: 0px 0px; border: none; display: inline; visibility: visible; z-index: auto;"></span>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <br>
+
+                        <h5>Changing colors</h5>
+                        <p>Here is a CSS template for modifying input fields in CSS. With Sass, you can achieve this by
+                            just changing a variable. The CSS shown below is unprefixed. Depending on what you use, you
+                            may have to change the type attribute selector.</p>
+
+                    </div>
+
+
+                    <!-- Textarea Section -->
+                    <div id="textarea" class="section scrollspy">
+                        <h3 class="header">Textarea</h3>
+                        <p>Textareas allow larger expandable user input. The border should light up simply and clearly
+                            indicating which field the user is currently editing. You must have a <code
+                                class=" language-markup">.input-field</code> div wrapping your input and label. This is
+                            only used in our Input and Textarea form elements.</p>
+                        <p><strong>Textareas will auto resize to the text inside.</strong></p>
+
+
+                        <div class="row">
+                            <form action="/forms.html" method="post"  class="col s12">
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                        <label for="textarea1">Textarea</label>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <p>advanced note: When dynamically changing the value of a textarea with methods like jQuery's
+                            <code class=" language-markup">.val()</code>, you must trigger an autoresize on it
+                            afterwords because .val() does not automatically trigger the events we've binded to the
+                            textarea. </p>
+
+                        <br>
+
+                        <h5>Icon Prefixes</h5>
+                        <p>You can add an icon prefix to make the form input label even more clear. Just add an icon
+                            with the class <code class=" language-markup">prefix</code> before the input and label.</p>
+                        <br>
+                        <div class="row">
+                            <form action="/forms.html" method="post"  class="col s12">
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <i class="material-icons prefix">mode_edit</i>
+                                        <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+                                        <label for="icon_prefix2">Message</label>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+
+
+                    <div id="file" class="section scrollspy">
+                        <h3 class="header">File Input</h3>
+                        <p>If you want to style an input button with a path input we provide this structure.</p>
+                        <form action="/forms.html" method="post"  action="#">
+                            <div class="file-field input-field">
+                                <div class="btn">
+                                    <span>File</span>
+                                    <input type="file">
+                                </div>
+                                <div class="file-path-wrapper">
+                                    <input class="file-path validate" type="text">
+                                </div>
+                            </div>
+                        </form>
+
+                        <p>You can also use the <code class=" language-markup">multiple</code> attribute to allow
+                            multiple file uploads. </p>
+                        <form action="/forms.html" method="post"  action="#">
+                            <div class="file-field input-field">
+                                <div class="btn">
+                                    <span>File</span>
+                                    <input type="file" multiple="">
+                                </div>
+                                <div class="file-path-wrapper">
+                                    <input class="file-path validate" type="text"
+                                        placeholder="Upload one or more files">
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+
+
+                    <div id="character-counter" class="section scrollspy">
+                        <h3 class="header">Character Counter</h3>
+                        <p class="caption">Use a character counter in fields where a character restriction is in place.
+                        </p>
+                        <div class="row">
+                            <form action="/forms.html" method="post"  class="col s12">
+                                <div class="row">
+                                    <div class="input-field col s6">
+                                        <input id="input_text" type="text" data-length="10">
+                                        <label for="input_text">Input text</label>
+                                        <span class="character-counter" style="float: right; font-size: 12px;"></span>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <textarea id="textarea2" class="materialize-textarea"
+                                            data-length="120"></textarea>
+                                        <label for="textarea2">Textarea</label>
+                                        <span class="character-counter" style="float: right; font-size: 12px;"></span>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <br>
+
+                        <h5>Initialization</h5>
+                        <p>There are no options for this plugin, but if you are adding these dynamically, you can use
+                            this to initialize them.</p>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
